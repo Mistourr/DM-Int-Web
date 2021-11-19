@@ -1,0 +1,31 @@
+body{
+  --wd-white: #FFFFFF;
+  --accent: #8428F8;
+}
+
+div.formComponent{
+  justify-content: space-around;
+}
+
+div.compGrid{
+  display: grid;
+  grid-template: 0.5fr 1fr 0.5fr 1fr / 1fr 1fr 1fr;
+}
+
+h1.formComponent{
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 56px;
+  color:var(--accent);
+}
+
+select.civilite{
+  border: 1px solid #949494;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 261px;
+  height: 59px;
+  background: var(--wd-white);
+}
