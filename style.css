@@ -1,31 +1,162 @@
-body{
+/* ===== Variables ===== */
+body {
+  /* Colors */
+  --bw-100: #181743;
+  --bw-200: #3f474b;
+  --bw-300: #7f8a8f;
+  --bw-400: #bec7cc;
+  --bw-500: hsl(198, 24%, 89%);
+  --bw-600: #f3f8fb;
+  --bw-700: #FFFFFF;
+
+  --burple-100: #271e64;
+  --burple-200: #5034ff;
+  --burple-300: #bebdff;
+  --burple-400: #6d6af4;
+  --burple-500: #dfe8ff;
+
+  --green-100: #1877bc;
+  --green-200: #0db8ae;
+  --green-300: #4edbd2;
+  --green-400: #9bfff9;
+  --green-500: #d9fffd;
+
+  --alert-red-100: #ee1313;
+  --alert-red-200: #fd5d5d;
+  --alert-red-300: #ff9e9e;
+  --alert-red-400: #ffd4d4;
+
+  --alert-green-100: #039700;
+  --alert-green-200: #2ad027;
+  --alert-green-300: #92f590;
+  --alert-green-400: #c7fec6;
+
+  --alert-yellow-100: #ea7e00;
+  --alert-yellow-200: #ffa53c;
+  --alert-yellow-300: #ffc27a;
+  --alert-yellow-400: #ffebc5;
+
   --wd-white: #FFFFFF;
   --accent: #8428F8;
+
+  --main-font: Poppins, arial, sans-serif;
 }
 
-div.formComponent{
-  justify-content: space-around;
+/* ===== Button ===== */
+
+button,
+.button {
+  border-radius: 40px;
+  transition: all ease-in-out 125ms;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  font-family: var(--main-font);
 }
 
-div.compGrid{
-  display: grid;
-  grid-template: 0.5fr 1fr 0.5fr 1fr / 1fr 1fr 1fr;
+button.large,
+.button.large {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
 }
 
-h1.formComponent{
-  font-family: Inter;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 46px;
-  line-height: 56px;
-  color:var(--accent);
+button.large:not(.text),
+.button.large:not(.text) {
+  padding: 24px 32px;
 }
 
-select.civilite{
-  border: 1px solid #949494;
-  box-sizing: border-box;
-  border-radius: 4px;
-  width: 261px;
-  height: 59px;
-  background: var(--wd-white);
+button.medium,
+.button.medium {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
 }
+
+button.medium:not(.text),
+.button.medium:not(.text) {
+  padding: 20px 24px;
+}
+
+button.small,
+.button.small {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+button.small:not(.text),
+.button.small:not(.text) {
+  padding: 12px 20px;
+}
+
+button.primary,
+.button.primary {
+  background: var(--burple-200);
+  color: var(--bw-700);
+  border: none;
+}
+
+button.primary:hover,
+.button.primary:hover {
+  background: var(--burple-100);
+}
+
+button.secondary,
+.button.secondary {
+  background: var(--bw-700);
+  border: 3px solid var(--bw-100);
+  color: var(--bw-100);
+}
+
+button.secondary:hover,
+.button.secondary:hover {
+  background: var(--bw-100);
+  color: var(--bw-700);
+}
+
+button.tertiary,
+.button.tertiary {
+  background: var(--burple-500);
+  border: 3px solid var(--bw-100);
+  color: var(--burple-100);
+}
+
+button.tertiary:hover,
+.button.tertiary:hover {
+  background: var(--bw-100);
+  color: var(--bw-700);
+}
+
+button.text,
+.button.text {
+  background: none;
+  color: var(--burple-200);
+  border: none;
+}
+
+button.text:hover,
+.button.text:hover {
+  color: var(--burple-100);
+}
+
+button.round{
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  border:none;
+  background: var(--burple-500);
+  color: var(--burple-100);
+  font-size: 48px;
+}
+
+button.round:hover{
+  background: var(--burple-400);
+}
+
+button.round:disabled{
+  background: var(--bw-500);
+  color: var(--bw-300);
+}
+/* ============================== */
+

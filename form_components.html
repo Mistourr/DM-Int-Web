@@ -6,18 +6,29 @@
     <title>replit</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
+
+  <style>
+    .buttons{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 184px;
+    }
+    .btngrp{
+      display: inline;
+    }
+  </style>
   
   <body>
-    <div class="formComponent" id="textInput">
-      <h1 class="formComponent">Text Input</h1>
-      <div class="compGrid">
-        <h3>Default</h3>
-        <label>
-          <input type="text"></input>
-        </label>
-        <h3>Hover</h3>
-        <h3>Active</h3>
+    <div class="buttons">
+      <div class="btngrp">
+        <button class="primary large">Click here!</button>
+        <button class="primary large">Click here!</button>
+        <button class="primary large">Click here!</button>
       </div>
+      <div class="btngrp">
+
+      </div>
+
     </div>
   </body>
 
