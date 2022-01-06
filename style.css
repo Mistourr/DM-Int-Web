@@ -8,6 +8,7 @@ body {
   --bw-500: hsl(198, 24%, 89%);
   --bw-600: #f3f8fb;
   --bw-700: #FFFFFF;
+  --text-color:#1A1A1A;
 
   --burple-100: #271e64;
   --burple-200: #5034ff;
@@ -21,6 +22,7 @@ body {
   --green-400: #9bfff9;
   --green-500: #d9fffd;
 
+  --error-red: #EE0004;
   --alert-red-100: #ee1313;
   --alert-red-200: #fd5d5d;
   --alert-red-300: #ff9e9e;
@@ -160,3 +162,47 @@ button.round:disabled{
 }
 /* ============================== */
 
+/* ========= Text Inputs ======== */
+
+div.textInput{
+  transition: 125ms;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  --input-color: var(--text-color);
+}
+
+div.textInput label{
+  transition: 125ms;
+  color: var(--input-color);
+}
+
+div.textInput input{
+  transition: 125ms;
+  border: 1px solid #949494;
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 20px 12px;
+  width: 311px;
+  height: 59px;
+}
+
+div.textInput input:hover{
+  border: 2px solid #767676;
+}
+
+div.textInput:focus-within input{
+  --input-color: #543FD3;
+  color: var(--input-color);
+  border: 2px solid var(--input-color);
+  outline: none;
+}
+
+div.textInput input:invalid{
+  --input-color: var(--error-red);
+}
+
+div.textInput input:disabled{
+  
+}
+/* ============================== */
