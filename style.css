@@ -175,6 +175,8 @@ div.textInput{
 div.textInput label{
   transition: 125ms;
   color: var(--input-color);
+  position: absolute;
+  line-height: 0;
 }
 
 div.textInput input{
@@ -198,11 +200,26 @@ div.textInput:focus-within input{
   outline: none;
 }
 
-div.textInput input:invalid{
-  --input-color: var(--error-red);
+div.textInput:focus-within label{
+  color: #543FD3;
+} 
+
+div.textInput input:invalid +label{
+  color: var(--error-red);
 }
 
 div.textInput input:disabled{
+  
+}
+/* ============================== */
+
+/* ======== Dropdown ============ */
+
+div.dropdown{
+  display: block;
+}
+
+button.dropbtn{
   
 }
 /* ============================== */

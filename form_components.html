@@ -14,7 +14,10 @@
       grid-column-gap: 184px;
     }
     .btngrp{
-      display: inline;
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+      gap: 25px;
     }
   </style>
   
@@ -22,8 +25,8 @@
     <div class="buttons">
       <div class="btngrp">
         <button class="primary large">Click here!</button>
-        <button class="primary large">Click here!</button>
-        <button class="primary large">Click here!</button>
+        <button class="primary medium">Click here!</button>
+        <button class="primary small">Click here!</button>
       </div>
       <div class="btngrp">
 
@@ -31,8 +34,13 @@
     </div>
     <div style="margin-top: 20px;">
       <div class="textInput">
-        <label for="input">Label</label>
         <input type="text" id="input" class="noHint" pattern="[A-Za-z]{0,}">
+        <label for="input">Label</label>
+      </div>
+    </div>
+    <div class="margin-top: 20px;">
+      <div class="dropdown">
+        
       </div>
     </div>
   </body>
