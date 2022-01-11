@@ -169,14 +169,13 @@ div.textInput{
   display: flex;
   flex-direction: column;
   gap: 6px;
-  --input-color: var(--text-color);
 }
 
 div.textInput label{
   transition: 125ms;
-  color: var(--input-color);
-  position: absolute;
-  line-height: 0;
+  color: var(--text-color);
+  position: relative;
+  bottom: 85px;
 }
 
 div.textInput input{
@@ -194,15 +193,19 @@ div.textInput input:hover{
 }
 
 div.textInput:focus-within input{
-  --input-color: #543FD3;
-  color: var(--input-color);
-  border: 2px solid var(--input-color);
+  color:#543FD3;
+  border: 2px solid #543FD3;
   outline: none;
 }
 
 div.textInput:focus-within label{
   color: #543FD3;
 } 
+
+div.textInput input:invalid{
+  border: 2px solid var(--error-red);
+  color:var(--error-red);
+}
 
 div.textInput input:invalid +label{
   color: var(--error-red);
