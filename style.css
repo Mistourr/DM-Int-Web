@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 /* ===== Variables ===== */
 body {
   /* Colors */
@@ -16,32 +18,12 @@ body {
   --burple-400: #6d6af4;
   --burple-500: #dfe8ff;
 
-  --green-100: #1877bc;
-  --green-200: #0db8ae;
-  --green-300: #4edbd2;
-  --green-400: #9bfff9;
-  --green-500: #d9fffd;
-
   --error-red: #EE0004;
-  --alert-red-100: #ee1313;
-  --alert-red-200: #fd5d5d;
-  --alert-red-300: #ff9e9e;
-  --alert-red-400: #ffd4d4;
-
-  --alert-green-100: #039700;
-  --alert-green-200: #2ad027;
-  --alert-green-300: #92f590;
-  --alert-green-400: #c7fec6;
-
-  --alert-yellow-100: #ea7e00;
-  --alert-yellow-200: #ffa53c;
-  --alert-yellow-300: #ffc27a;
-  --alert-yellow-400: #ffebc5;
-
+  
   --wd-white: #FFFFFF;
   --accent: #8428F8;
-
-  --main-font: Poppins, arial, sans-serif;
+  --blue1: #141C3A;
+  --blue2: #535E88;
 }
 
 /* ===== Button ===== */
@@ -53,7 +35,6 @@ button,
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  font-family: var(--main-font);
 }
 
 button.large,
@@ -226,3 +207,167 @@ button.dropbtn{
   
 }
 /* ============================== */
+
+/* ======== "properties" ======== */
+
+.centered{
+  text-align: center;
+}
+
+.no-blank{
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.text-left{
+  padding-left: start;
+}
+
+.text-right{
+  text-align: end;
+}
+
+.margin{
+  margin-top: 10px;
+}
+
+div.flex-centered{
+  display: flex;
+  justify-content: center;
+}
+
+div.grid{
+  display: grid;
+}
+
+
+
+/* ============================== */
+
+html{
+  scroll-behavior: smooth;
+  font-family: Roboto;
+}
+
+header{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+body{
+  margin:0;
+  padding: 0;
+}
+
+header .left h1{
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 30px;
+  color: var(--blue1);
+}
+
+header .right{
+  display: flex;
+  align-items: center;
+}
+
+header .right ul{
+  display: flex;
+  gap: 37.8px;
+  list-style: none;
+}
+
+header a{
+  text-decoration: none;
+  color: var(--blue1);
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+header a#about-btn{
+  color: var(--accent);
+}
+
+header a:visited{
+  color: inherit; 
+}
+
+p{
+  margin:0px;
+  
+}
+
+p.title{
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  color: var(--blue1);
+}
+
+p.large{
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 30px;
+}
+
+p.medium{
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color:var(--blue1)
+}
+
+p.small{
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 30px;
+  color: var(--blue2);
+}
+
+p.paragraph{
+  width: 609px;
+}
+
+div.flex-column{
+  display: inline-block
+}
+
+section#about-me{
+  margin-top: 150px;
+}
+
+section#about-me img{
+  margin-top: 78px;
+}
+
+section#about-me div.contact-grid{
+  display: grid;
+  grid-template-columns: 1fr 1px 1fr;
+  width: 350px;
+  column-gap: 19px;
+}
+
+div.line{
+  width: 0;
+  height: 27px;
+  border-left: solid 0.25px #DCDCDE;
+  align-self: center;
+  justify-self: center;
+}
+
+section#about-me div.intro{
+  margin-top: 286px;
+}
+
+section#experience{
+  margin-top: 265px;
+}
+
+section#experience div.history{
+  margin-top: 165px;
+  display: grid;
+  grid-template-columns: 1fr 5px 1fr;
+}
