@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-/*Pas terminé*/
+
 /* ===== Variables ===== */
 body {
   /* Colors */
@@ -166,7 +166,6 @@ button.round:disabled{
   background: var(--bw-500);
   color: var(--bw-300);
 }
-/* ============================== */
 
 /* ========= Input General ====== */
 
@@ -196,7 +195,6 @@ div.input .noHint:invalid{
 div.input .noHint:invalid +label{
   color: var(--error-red);
 }
-/* ============================== */
 
 /* ========= Text Inputs ======== */
 
@@ -249,9 +247,8 @@ input.tall{
 input.tall +label{
   bottom: 263px !important;
 }
-/* ============================== */
 
-/* ======== Dropdown ============ */
+/* ======== Dropdown (selects)=== */
 
 div.input select +label{
   bottom: 86px;
@@ -278,7 +275,6 @@ select:focus{
 select:disabled{
   background: #F4F4F4;
 }
-/* ============================== */
 
 /* ======== "properties" ======== */
 
@@ -316,9 +312,6 @@ div.flex-column{
 div.grid{
   display: grid;
 }
-
-
-/* ============================== */
 
 /* ========== Shapes ============ */
 
@@ -387,7 +380,6 @@ div.grid{
   background: var(--hline);
   margin-left: 194px;
 }
-/* ============================== */
 
 /* ======== Progress Bar ======== */
 
@@ -416,7 +408,64 @@ progress::-moz-progress-bar
   border-radius: 100px;
   background: var(--accent);
 }
-/* ============================== */
+
+/* ====Elements de texte========= */
+
+p.title{
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 56px;
+  color: var(--color1);
+}
+
+p.large{
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 30px;
+  color: var(--color1)
+}
+
+p.medium{
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
+  color:var(--color1)
+}
+
+p.small{
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 30px;
+  color: var(--color2);
+}
+
+p.paragraph{
+  width: 609px;
+}
+
+p.small-paragraph{
+  width: 380px;
+}
+
+p.small-paragraph2{
+  width: 373px;
+}
+
+p.label{
+  color: inherit;
+}
+
+p.progress{
+  margin-top: 30px;
+  margin-left: 18px;
+}
+
+/* =========Mise en page========== */
+
+section{
+  break-inside: avoid;
+}
 
 html{
   scroll-behavior: smooth;
@@ -473,56 +522,6 @@ header a:visited{
 p{
   margin:0px;
   
-}
-
-p.title{
-  font-style: normal;
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 56px;
-  color: var(--color1);
-}
-
-p.large{
-  font-weight: 900;
-  font-size: 26px;
-  line-height: 30px;
-  color: var(--color1)
-}
-
-p.medium{
-  font-weight: 300;
-  font-size: 20px;
-  line-height: 30px;
-  color:var(--color1)
-}
-
-p.small{
-  font-weight: 300;
-  font-size: 17px;
-  line-height: 30px;
-  color: var(--color2);
-}
-
-p.paragraph{
-  width: 609px;
-}
-
-p.small-paragraph{
-  width: 380px;
-}
-
-p.small-paragraph2{
-  width: 373px;
-}
-
-p.label{
-  color: inherit;
-}
-
-p.progress{
-  margin-top: 30px;
-  margin-left: 18px;
 }
 
 section#about-me{
