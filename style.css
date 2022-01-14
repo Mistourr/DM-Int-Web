@@ -25,6 +25,8 @@ body {
   --blue1: #141C3A;
   --blue2: #535E88;
   --blue3: #DCDCDE;
+  --blue4: #F9FBFD;
+  --blue5: #1D274F;
 
   --inactive: #949494;
   --hover: #767676;
@@ -32,8 +34,18 @@ body {
 
   --hline: #E5EBF2;
   --progbars:#DFE5EB;
+
+  --bg1: var(--bw-700);
+  --bg2: var(--blue4);
+
+  --color1: var(--blue1);
+  --color1: var(var(--blue5))
 }
 
+body.dark{
+  --bg1: var(--blue1);
+  --bg2: var();
+}
 /* ===== Button ===== */
 
 button,
@@ -404,6 +416,7 @@ html{
 header{
   display: flex;
   justify-content: space-evenly;
+  background: var(--bg1);
 }
 
 body{
@@ -416,7 +429,7 @@ header .left h1{
   font-weight: 900;
   font-size: 26px;
   line-height: 30px;
-  color: var(--blue1);
+  color: var(--color1);
 }
 
 header .right{
@@ -432,7 +445,7 @@ header .right ul{
 
 header a{
   text-decoration: none;
-  color: var(--blue1);
+  color: var(--color1);
   font-weight: 300;
   font-size: 17px;
   line-height: 30px;
@@ -456,7 +469,7 @@ p.title{
   font-weight: 900;
   font-size: 48px;
   line-height: 56px;
-  color: var(--blue1);
+  color: var(--color2);
 }
 
 p.large{
@@ -469,14 +482,14 @@ p.medium{
   font-weight: 300;
   font-size: 20px;
   line-height: 30px;
-  color:var(--blue1)
+  color:var(--color1)
 }
 
 p.small{
   font-weight: 300;
   font-size: 17px;
   line-height: 30px;
-  color: var(--blue2);
+  color: var(--color2);
 }
 
 p.paragraph{
@@ -516,11 +529,14 @@ section#about-me div.contact-grid{
 }
 
 section#about-me div.intro{
-  margin-top: 286px;
+  margin-top: 132px;
+  padding-top: 154px;
+  padding-bottom: 144px;
+  background: var(--bg2);
 }
 
 section#experience{
-  margin-top: 265px;
+  margin-top: 121px;
 }
 
 section#experience div.history{
@@ -544,7 +560,10 @@ section#skills div.skill-bars{
 }
 
 section#education{
-  margin-top: 168px;
+  margin-top: 120px;
+  padding-top: 48px;
+  padding-bottom: 120px;
+  background: var(--bg2);
 }
 
 section#education .edu-grid{
@@ -590,8 +609,10 @@ section#contact div.form-line{
 }
 
 footer{
-  margin-top: 378px;
-  margin-bottom: 211px;
+  margin-top: 167px;
+  padding-top: 211px;
+  padding-bottom: 211px;
+  background: var(--bg2);
 }
 
 footer a{
