@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="impression.css" media="print">
 </head>
 
 <header>
@@ -17,9 +18,9 @@
       <ul>
         <li><a id="about-btn" href="#about-me">About me</a></li>
         <li><a href="#experience">Experience</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Contact</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </div>
@@ -37,11 +38,11 @@
     </div>
     <div class="flex-centered">
       <div class="contact-grid">
-        <div class="after-line">
+        <div>
           <p class="medium text-right">Phone</p>
           <p class="small text-right">052-4870-563</p>
         </div>
-        <div class="line">
+        <div class="small-line">
           
         </div>
         <div>
@@ -65,12 +66,200 @@
     <div class="flex-centered">
       <p class="large">EXPERIENCE</p>
     </div>
+    <div class="horizontal-sep" style="margin-top: 44px;"></div> <!--ligne horizontale, j'utilise un attribut style pour éviter d'en créer 42 variantes-->
     <div class="flex-centered">
       <div class="history">
-
+        <!-- Row n°1 -->
+        <div>
+          <p class="medium text-right">2010 - Present</p>
+          <p class="small text-right margin">FULL STACK DEVELOPER</p>
+        </div>
+        <div>
+          <div class="long-line dotted-vertical"></div>
+        </div>
+        <div>
+          <p class="medium">Wix</p>
+          <p class="small small-paragraph margin">Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.</p>
+        </div>
+        <!-- Row n°2 -->
+        <div>
+          <p class="medium text-right">2008 - 2010</p>
+          <p class="small text-right margin">FULL STACK DEVELOPER</p>
+        </div>
+        <div>
+          <div class="long-line dotted-vertical"></div>
+        </div>
+        <div>
+          <p class="medium">Google</p>
+          <p class="small small-paragraph margin">Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.</p>
+        </div>
+        <!-- Row n°3 -->
+        <div>
+          <p class="medium text-right">2004 - 2008</p>
+          <p class="small text-right">FULL STACK DEVELOPER</p>
+        </div>
+        <div>
+          <div class="dotted-vertical"></div>
+        </div>
+        <div>
+          <p class="medium">Facebook</p>
+          <p class="small small-paragraph">Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.</p>
+        </div>
       </div>
     </div>
-
+  </section>
+  <div class="horizontal-sep" style="margin-top: 17px;"></div> <!--ligne horizontale, j'utilise un attribut style pour éviter d'en créer 42 variantes-->
+  <section id="skills">
+    <div class="flex-centered">
+      <p class="large">SKILLS</p>
+    </div>
+    <div class="horizontal-sep" style="margin-top: 44px;"></div> <!--ligne horizontale, j'utilise un attribut style pour éviter d'en créer 42 variantes-->
+    <div class="flex-centered">
+      <div class="skill-bars">
+        <!-- Row n°1 -->
+        <div style="display: flex;">
+          <label><p class="small label">PYTHON</p>
+            <progress max="100" value="80"> 80% </progress>
+          </label>
+          <p class="small progress">80%</p>
+        </div>
+        <div style="display: flex;">
+          <label><p class="small label">TEAM LEADING</p>
+            <progress max="100" value="80"> 80% </progress>
+          </label>
+          <p class="small progress">80%</p>
+        </div>
+        <!-- Row n°2 -->
+        <div style="display: flex;">
+          <label><p class="small label">C++</p>
+            <progress max="100" value="80"> 80% </progress>
+          </label>
+          <p class="small progress">80%</p>
+        </div>
+        <div style="display: flex;">
+          <label><p class="small label">HTML 5</p>
+            <progress max="100" value="80"> 80% </progress>
+          </label>
+          <p class="small progress">80%</p>
+        </div>
+        <!-- Row n°3 -->
+        <div style="display: flex;">
+          <label><p class="small label">BACKEND</p>
+            <progress max="100" value="80"> 80% </progress>
+          </label>
+          <p class="small progress">80%</p>
+        </div>
+        <div style="display: flex;">
+          <label><p class="small label">CSS 3</p>
+            <progress max="100" value="80"> 80% </progress>
+          </label>
+          <p class="small progress">80%</p>
+        </div>
+        <!-- Row n°4 -->
+        <div style="display: flex;">
+          <label><p class="small label">FRONTEND</p>
+            <progress max="100" value="80"> 80% </progress>
+          </label>
+          <p class="small progress">80%</p>
+        </div>
+        <div style="display: flex;">
+          <label><p class="small label">BOOTSTRAP</p>
+            <progress max="100" value="80"> 80% </progress>
+          </label>
+          <p class="small progress">80%</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="education">
+    <div class="flex-centered">
+      <p class="large">EDUCATION</p>
+    </div>
+    <div class="horizontal-sep" style="margin-top: 44px;"></div> <!--ligne horizontale, j'utilise un attribut style pour éviter d'en créer 42 variantes-->
+    <div class="flex-centered">
+      <div class="edu-grid">
+        <!--Row n°1-->
+        <div>
+          <p class="medium">2010 - Present</p>
+          <p class="small margin">Master of Computer Science</p>
+        </div>
+        <div>
+          <p class="medium">2010 - Present</p>
+          <p class="small margin">FULL STACK DEVELOPER</p>
+        </div>
+        <div>
+          <p class="medium">2010 - Present</p>
+          <p class="small margin">FULL STACK DEVELOPER</p>
+        </div>
+        <!--Row n°2-->
+        <div class="h-line dotted-horizontal"></div>
+        <div class="h-line dotted-horizontal"></div>
+        <div class="h-line dotted-horizontal"></div>
+        <!--Row n°3-->
+        <div>
+          <p class="medium">UNIVERSITY OF NORTH CAROLINA</p>
+          <p class="small small-paragraph2 margin">Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.</p>
+        </div>
+        <div>
+          <p class="medium">UNIVERSITY OF BOSTON</p>
+          <p class="small small-paragraph2 margin">Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.</p>
+        </div>
+        <div>
+          <p class="medium">UNIVERSITY OF NORTH CAROLINA</p>
+          <p class="small small-paragraph2 margin">Duis aute irure dolor in reprehenderit in vol patate velit esse cillum dolore eu fugiat nulla pari. Excepteur sint occana inna tecat cupidatat non proident.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="horizontal-sep" style="margin-top:240px;"></div> <!--ligne horizontale, j'utilise un attribut style pour éviter d'en créer 42 variantes-->
+  <section id="projects">
+    <div class="flex-centered">
+      <p class="large">PROJECTS</p>
+    </div>
+    <div class="horizontal-sep" style="margin-top: 44px;"></div> <!--ligne horizontale, j'utilise un attribut style pour éviter d'en créer 42 variantes-->
+    <div class="flex-centered">
+      <div class="cards">
+        <img class="card" src="img/project03.png" alt="project03">
+        <img class="card" src="img/project06.png" alt="project06">
+        <img class="card" src="img/project05.png" alt="project05">
+        <img class="card" src="img/project02.png" alt="project02">
+        <img class="card" src="img/project01.png" alt="project01">
+        <img class="card" src="img/project04.png" alt="project04">
+      </div>
+    </div>
+  </section>
+  <div class="horizontal-sep" style="margin-top: 168px;"></div> <!--ligne horizontale, j'utilise un attribut style pour éviter d'en créer 42 variantes-->
+  <section id="contact">
+    <div class="flex-centered">
+      <p class="large">Contact me</p>
+    </div>
+    <div class="horizontal-sep" style="margin-top: 44px;"></div> <!--ligne horizontale, j'utilise un attribut style pour éviter d'en créer 42 variantes-->
+    <div class="flex-centered">
+      <form action="">
+        <div class="form-line">
+          <div class="input">
+            <select class="noHint" name="" id="select-civ"></select>
+            <label for="select-civ">Civilité *</label>
+          </div>
+          <div class="input">
+            <input type="text" id="input-name" class="noHint medium">
+            <label for="input-name"><p class="small label">Prénom Nom *</p></label>
+          </div>
+        </div>
+        <div class="input">
+          <input type="text" id="input-mail" class="noHint large">
+          <label for="input-mail"><p class="small label">Adresse email *</p></label>
+        </div>
+        <div class="input">
+          <input type="text" id="input-title" class="noHint large">
+          <label for="input-title"><p class="small label">Titre du message *</p></label>
+        </div>
+        <div class="input">
+          <input type="text" id="input-msg" class="noHint large tall">
+          <label for="input-msg"><p class="small label">Votre message *</p></label>
+        </div>
+      </form>
+    </div>
   </section>
 </body>
 

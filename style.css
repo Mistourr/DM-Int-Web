@@ -24,6 +24,14 @@ body {
   --accent: #8428F8;
   --blue1: #141C3A;
   --blue2: #535E88;
+  --blue3: #DCDCDE;
+
+  --inactive: #949494;
+  --hover: #767676;
+  --focus: #543FD3;
+
+  --hline: #E5EBF2;
+  --progbars:#DFE5EB;
 }
 
 /* ===== Button ===== */
@@ -143,68 +151,109 @@ button.round:disabled{
 }
 /* ============================== */
 
-/* ========= Text Inputs ======== */
+/* ========= Input General ====== */
 
-div.textInput{
-  transition: 125ms;
+div.input{
+  transition: all ease-in-out 125ms;
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
-div.textInput label{
-  transition: 125ms;
+div.input label{
+  transition: all ease-in-out 125ms;
   color: var(--text-color);
   position: relative;
-  bottom: 85px;
+  
 }
 
-div.textInput input{
-  transition: 125ms;
-  border: 1px solid #949494;
-  box-sizing: border-box;
-  border-radius: 4px;
-  padding: 20px 12px;
-  width: 311px;
-  height: 59px;
-}
-
-div.textInput input:hover{
-  border: 2px solid #767676;
-}
-
-div.textInput:focus-within input{
-  color:#543FD3;
-  border: 2px solid #543FD3;
-  outline: none;
-}
-
-div.textInput:focus-within label{
-  color: #543FD3;
+div.input:focus-within label{
+  color: var(--focus);
 } 
 
-div.textInput input:invalid{
+div.input .noHint:invalid{
   border: 2px solid var(--error-red);
   color:var(--error-red);
 }
 
-div.textInput input:invalid +label{
+div.input .noHint:invalid +label{
   color: var(--error-red);
 }
+/* ============================== */
 
-div.textInput input:disabled{
+/* ========= Text Inputs ======== */
+
+div.input input +label{
+  bottom: 92px;
+}
+
+div.input input{
+  transition: all ease-in-out 125ms;
+  border: 1px solid var(--inactive);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding: 20px 12px;
+  height: 59px;
+}
+
+div.input:focus-within input{
+  color:var(--focus);
+  border: 2px solid var(--focus);
+  outline: none;
+}
+
+div.input input:disabled{
   
+}
+
+div.input input:hover{
+  border: 2px solid var(--hover);
+}
+
+input.small{
+  width: 261px;
+}
+
+input.medium{
+  width: 825px;
+}
+
+input.large{
+  width: 1134px;
+}
+
+input.tall{
+  height: 230px !important;
+}
+
+input.tall +label{
+  bottom: 263px !important;
 }
 /* ============================== */
 
 /* ======== Dropdown ============ */
 
-div.dropdown{
-  display: block;
+div.input select +label{
+  bottom: 86px;
 }
 
-button.dropbtn{
-  
+select{
+  transition: all ease-in-out 125ms;
+  border: 1px solid var(--inactive);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 261px;
+  height: 59px;
+  padding: 20px 12px;
+  background: #FFFFFF;
+}
+
+select:hover{
+  border: 2px solid var(--hover);
+}
+
+select:focus{
+  border: 2px solid var(--focus);
 }
 /* ============================== */
 
@@ -236,12 +285,114 @@ div.flex-centered{
   justify-content: center;
 }
 
+div.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
 div.grid{
   display: grid;
 }
 
 
+/* ============================== */
 
+/* ========== Shapes ============ */
+
+.small-line{
+  width: 1px;
+  height: 27px;
+  background: var(--blue3);
+  align-self: center;
+  justify-self: center;
+}
+
+.long-line{
+  width: 1px;
+  height: 224px;
+  background: var(--blue3);
+  align-self: center;
+  justify-self: center;
+}
+
+.h-line{
+  width: 414px;
+  height: 1px;
+  background: var(--blue3);
+  align-self: center;
+  justify-self: center;
+}
+
+.dotted-vertical{
+  margin-top: 30px;
+}
+
+.dotted-vertical::after{
+  width: 9px;
+  height: 9px;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  background: var(--accent);
+  position:relative;
+  z-index: 2;
+  left: -4px;
+  top: -20px
+}
+
+.dotted-horizontal{
+  margin-left: 40px;
+  margin-right: 31px;
+}
+
+.dotted-horizontal::before{
+  width: 9px;
+  height: 9px;
+  content: "";
+  display: block;
+  border-radius: 50%;
+  background: var(--accent);
+  position:relative;
+  z-index: 2;
+  top: -4.5px;
+  right: 40px;
+}
+
+.horizontal-sep{
+  width: 80%;
+  height: 1px;
+  background: var(--hline);
+  margin-left: 194px;
+}
+/* ============================== */
+
+/* ======== Progress Bar ======== */
+
+progress{
+  border-radius: 100px;
+  background: var(--progbars);
+  height: 6px;
+  border: none;
+  width: 467px;
+}
+
+/* utilisation de moz pour Firefox et de webkit pour le reste */
+
+progress::-webkit-progress-bar {
+  background-color: var(--progbars);
+  border-radius: 100px;
+}
+
+progress::-moz-progress-bar
+{
+  background: var(--accent);
+  border-radius: 100px;
+}
+
+::-webkit-progress-value {
+  border-radius: 100px;
+  background: var(--accent);
+}
 /* ============================== */
 
 html{
@@ -331,8 +482,21 @@ p.paragraph{
   width: 609px;
 }
 
-div.flex-column{
-  display: inline-block
+p.small-paragraph{
+  width: 380px;
+}
+
+p.small-paragraph2{
+  width: 373px;
+}
+
+p.label{
+  color: inherit;
+}
+
+p.progress{
+  margin-top: 30px;
+  margin-left: 18px;
 }
 
 section#about-me{
@@ -350,14 +514,6 @@ section#about-me div.contact-grid{
   column-gap: 19px;
 }
 
-div.line{
-  width: 0;
-  height: 27px;
-  border-left: solid 0.25px #DCDCDE;
-  align-self: center;
-  justify-self: center;
-}
-
 section#about-me div.intro{
   margin-top: 286px;
 }
@@ -367,7 +523,67 @@ section#experience{
 }
 
 section#experience div.history{
-  margin-top: 165px;
+  margin-top: 120px;
   display: grid;
-  grid-template-columns: 1fr 5px 1fr;
+  grid-template-columns: 1fr 1px 1fr;
+  column-gap: 87px;
+  grid-row: 255px;
+}
+
+section#skills {
+  margin-top: 47px;
+}
+
+section#skills div.skill-bars{
+  margin-top: 130px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 51px;
+  row-gap: 29px;
+}
+
+section#education{
+  margin-top: 168px;
+}
+
+section#education .edu-grid{
+  margin-top: 120px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: auto 1px auto;
+  row-gap: 35.5px;
+}
+
+section#projects{
+  margin-top: 47px;
+}
+
+section#projects div.cards{
+  margin-top: 95px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  column-gap: 45px;
+  row-gap: 45px;
+}
+
+img.card{
+  width: 356px;
+  height: 241px;
+  border-radius: 11px;
+}
+
+section#contact{
+  margin-top: 47px;
+}
+
+section#contact form{
+  margin-top: 165px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+section#contact div.form-line{
+  display: flex;
+  gap: 48px;
 }
