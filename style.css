@@ -43,6 +43,7 @@ button,
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+  width: auto;
 }
 
 button.large,
@@ -161,7 +162,6 @@ div.input{
 }
 
 div.input label{
-  transition: all ease-in-out 125ms;
   color: var(--text-color);
   position: relative;
   
@@ -173,7 +173,6 @@ div.input:focus-within label{
 
 div.input .noHint:invalid{
   border: 2px solid var(--error-red);
-  color:var(--error-red);
 }
 
 div.input .noHint:invalid +label{
@@ -188,18 +187,11 @@ div.input input +label{
 }
 
 div.input input{
-  transition: all ease-in-out 125ms;
   border: 1px solid var(--inactive);
   box-sizing: border-box;
   border-radius: 4px;
   padding: 20px 12px;
   height: 59px;
-}
-
-div.input:focus-within input{
-  color:var(--focus);
-  border: 2px solid var(--focus);
-  outline: none;
 }
 
 div.input input:disabled{
@@ -208,6 +200,16 @@ div.input input:disabled{
 
 div.input input:hover{
   border: 2px solid var(--hover);
+}
+
+div.input input:focus{
+  color:var(--focus);
+  border: 2px solid var(--focus);
+  outline: none;
+}
+
+div.input input:invalid{
+  color:var(--error-red);
 }
 
 input.small{
@@ -238,7 +240,6 @@ div.input select +label{
 }
 
 select{
-  transition: all ease-in-out 125ms;
   border: 1px solid var(--inactive);
   box-sizing: border-box;
   border-radius: 4px;
@@ -586,4 +587,14 @@ section#contact form{
 section#contact div.form-line{
   display: flex;
   gap: 48px;
+}
+
+footer{
+  margin-top: 378px;
+  margin-bottom: 211px;
+}
+
+footer a{
+  color: var(--accent)!important ;
+  text-decoration-line: underline;
 }

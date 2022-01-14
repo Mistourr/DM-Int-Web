@@ -238,29 +238,39 @@
       <form action="">
         <div class="form-line">
           <div class="input">
-            <select class="noHint" name="" id="select-civ"></select>
+            <select class="noHint" required name="" id="select-civ">
+              <option></option>
+              <option>Madame</option>
+              <option>Monsieur</option>
+              <option>Aucun</option>
+            </select>
             <label for="select-civ">Civilité *</label>
           </div>
           <div class="input">
-            <input type="text" id="input-name" class="noHint medium">
+            <input type="text" id="input-name" class="noHint medium" required>
             <label for="input-name"><p class="small label">Prénom Nom *</p></label>
           </div>
         </div>
         <div class="input">
-          <input type="text" id="input-mail" class="noHint large">
+          <input type="email" id="input-mail" class="noHint large" required>
           <label for="input-mail"><p class="small label">Adresse email *</p></label>
         </div>
         <div class="input">
-          <input type="text" id="input-title" class="noHint large">
+          <input type="text" id="input-title" class="noHint large" required>
           <label for="input-title"><p class="small label">Titre du message *</p></label>
         </div>
         <div class="input">
-          <input type="text" id="input-msg" class="noHint large tall">
+          <input type="text" id="input-msg" class="noHint large tall" required>
           <label for="input-msg"><p class="small label">Votre message *</p></label>
         </div>
+        <button class="primary medium">Envoyer</button>
       </form>
     </div>
   </section>
 </body>
-
+<footer>
+  <div class="flex-centered">
+    <a href=""><p class="large">DOWNLOAD CV</p></a>
+  </div>
+</footer>
 </html>
