@@ -39,12 +39,16 @@ body {
   --bg2: var(--blue4);
 
   --color1: var(--blue1);
-  --color1: var(var(--blue5))
+  --color2: var(--blue2);
 }
 
 body.dark{
   --bg1: var(--blue1);
-  --bg2: var();
+  --bg2: var(--blue5);
+  --color1:var(--blue4);
+  --color2:var(--blue4);
+  --hline: var(--blue2);
+  --progbars: var(--blue2);
 }
 /* ===== Button ===== */
 
@@ -166,6 +170,10 @@ button.round:disabled{
 
 /* ========= Input General ====== */
 
+label{
+  color: var(--color2);
+}
+
 div.input{
   transition: all ease-in-out 125ms;
   display: flex;
@@ -174,9 +182,7 @@ div.input{
 }
 
 div.input label{
-  color: var(--text-color);
   position: relative;
-  
 }
 
 div.input:focus-within label{
@@ -422,6 +428,7 @@ header{
 body{
   margin:0;
   padding: 0;
+  background: var(--bg1);
 }
 
 header .left h1{
@@ -452,11 +459,11 @@ header a{
 }
 
 header a#about-btn{
-  color: var(--accent);
+  color: var(--accent)!important;
 }
 
 header a:visited{
-  color: inherit; 
+  color: var(--color1); 
 }
 
 p{
@@ -469,13 +476,14 @@ p.title{
   font-weight: 900;
   font-size: 48px;
   line-height: 56px;
-  color: var(--color2);
+  color: var(--color1);
 }
 
 p.large{
   font-weight: 900;
   font-size: 26px;
   line-height: 30px;
+  color: var(--color1)
 }
 
 p.medium{
@@ -514,7 +522,8 @@ p.progress{
 }
 
 section#about-me{
-  margin-top: 150px;
+  margin-top: 112px;
+  background: var(--bg1);
 }
 
 section#about-me img{
@@ -616,6 +625,9 @@ footer{
 }
 
 footer a{
-  color: var(--accent)!important ;
   text-decoration-line: underline;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 30px;
+  color: var(--accent)
 }
