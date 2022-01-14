@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>replit</title>
+    <title>Form Components</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
   <style>
     .buttons{
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(4,auto);
       grid-column-gap: 184px;
     }
     .btngrp{
@@ -18,6 +18,9 @@
       flex-direction: column;
       width: 200px;
       gap: 25px;
+    }
+    body{
+      padding: 24px 24px;
     }
   </style>
   
@@ -29,17 +32,33 @@
         <button class="primary small">Click here!</button>
       </div>
       <div class="btngrp">
-
+        <button class="secondary large">Click here!</button>
+        <button class="secondary medium">Click here!</button>
+        <button class="secondary small">Click here!</button>
+      </div>
+      <div class="btngrp">
+        <button class="tertiary large">Click here!</button>
+        <button class="tertiary medium">Click here!</button>
+        <button class="tertiary small">Click here!</button>
+      </div>
+      <div class="btngrp">
+        <button class="text large">Click here!</button>
+        <button class="text medium">Click here!</button>
+        <button class="text small">Click here!</button>
       </div>
     </div>
-    <div style="margin-top: 30px;">
-      <div class="textInput">
-        <input type="text" id="input" class="noHint" pattern="[A-Za-z ]{0,}">
+    <div style="margin-top: 45px;">
+      <div class="input">
+        <input type="text" id="input" class="noHint medium" required pattern="[A-Za-z ]{0,}">
         <label for="input">Label</label>
       </div>
     </div>
     <div class="margin-top: 30px;">
-      <select name="test" id=""></select>
+      <select name="test" id="" required>
+        <option value=""></option>
+        <option value="">option 1</option>
+        <option value="">option 2</option>
+      </select>
     </div>
   </body>
 

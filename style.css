@@ -213,7 +213,7 @@ div.input input{
 }
 
 div.input input:disabled{
-  
+  background: #F4F4F4;
 }
 
 div.input input:hover{
@@ -273,6 +273,10 @@ select:hover{
 
 select:focus{
   border: 2px solid var(--focus);
+}
+
+select:disabled{
+  background: #F4F4F4;
 }
 /* ============================== */
 
